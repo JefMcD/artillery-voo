@@ -1,0 +1,244 @@
+/*************************************************************
+//
+//  Main Style Sheet
+//
+//
+/************************************************************/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.art-voo-main-wrapper {
+    position: relative;
+    display: block;
+    max-width: 768px;
+    height: auto;
+    top: 5rem;
+    left: 0px;
+
+    font: 16pt var(--font-main), Arial, Helvetica;
+    color: var(--color-mono-white);
+    margin: auto;
+    padding: 0.5em;
+    background: transparent url(../images/helloFrens/shells.jpg) repeat left top;
+    border: 1px solid;
+    border-color: var(--color2-light);
+    border-radius: 0.5rem;
+
+}
+
+.positionCenterFixed {
+    /* Centers Fixed Block with margins*/
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 768px;
+    width: 100%;
+    z-index: 5;
+}
+
+html,
+body {
+    min-height: 100%;
+    background-color: var(--color1-dark);
+    border-radius: 4px;
+}
+
+body,
+form,
+input,
+select,
+textarea {
+    outline: none;
+    font-family: var(--font-main), Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: var(--color-mono-lightgrey);
+    border-radius: 1em;
+}
+select{
+    margin-right: 0.5rem;
+}
+
+b {
+    font: 14pt InkFree, Helvetica, Arial, Gill, Lucida;
+    font-weight: 900;
+    color:var(--color2-bright);
+}
+
+h1 {
+    /*Large Militaristic Titles */
+    font: 24pt Militarist, Arial, Helvetica, Gill, Lucida;
+    font-weight: 700;
+    color:var(--color2-bright);
+}
+
+h2 {
+    /*Large Militaristic Titles */
+    font: 20pt Militarist, Arial, Helvetica, Gill, Lucida;
+    font-weight: 700;
+    color:var(--color2-bright);
+}
+
+h3 {
+    /*Large Militaristic Titles */
+    font: 16pt Militarist, Arial, Helvetica, Gill, Lucida;
+    font-weight: 700;
+    color:var(--color2-bright);
+}
+
+h4 {
+    /*********Order Form Font *********/
+    margin: 14px 0 4px;
+    font-weight: 400;
+    font: 14pt InkFree, Helvetica, Arial, Gill, Lucida;
+    font-weight: 700;
+    color: var(--color-mono-lightgrey);
+}
+
+
+p {
+    /* Global Site Font */
+
+    font: 14pt InkFree, Arial, Helvetica, Gill, Lucida;
+
+    text-align: justify;
+    color: var(--color-mono-lightgrey);
+}
+
+p>a {
+    /* Global How Link look inside boxes Font */
+
+    text-align: justify;
+    font: 18pt InkFree, Helvetica, Arial, Gill, Lucida;
+    font-weight: 900;
+}
+
+
+img {
+    /** Size images to viewport ***********/
+    display: inline-block;
+    border: 0;
+    max-width: 100%;
+    padding: 0px;
+
+}
+
+span.hidden{
+    visibility:hidden;
+}
+
+
+
+/************************************************************/
+/************************************************************/
+#artPrint-testimonial-box {
+    /** This ID tag is used by random-message.js **/
+    padding: 0rem;
+}
+.marquee-box {
+    position: relative;
+    display: block;
+    margin: auto;
+    text-align: center;
+
+    font: 12pt InkFree, Arial, Helvetica;
+    color: var(--color-accent4);
+    padding: 0rem;
+
+
+}
+/***********************************************************/
+/***********************************************************/
+
+
+
+
+/*************************************************************
+//
+//  boxes containing text and Images
+//
+//
+/************************************************************/
+
+.pic-title {
+    /* transparent Bordered Box with content on right */
+    padding: 1rem;
+    border: 1px solid var(--color-mono-mediumgrey);
+    margin: auto;
+    margin-bottom: 1em;
+    text-align: right;
+    border-radius: 1em;
+    font: 16pt InkFree, Arial, Helvetica;
+    color: var(--color-mono-white);
+}
+
+.pic-story-image {
+    /* transparent Box for displaying centered images */
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.pic-story-image a,
+.pic-story-image a:hover{
+    color: var(--color2-light)
+}
+
+
+.pic-story {
+    /* Bordered box with transparent background */
+    padding: 1rem;
+    border: 1px solid var(--color-mono-mediumgrey);
+    margin: auto;
+    margin-bottom: 1em;
+    background-size: cover;
+    border-radius: 1em;
+    font: 16pt var(--font-main), Arial, Helvetica;
+    color:var(--color2-light)
+}
+
+.story-box {
+    /* Bordered Box with semi-opaque background */
+    background-color: var(--color2-semi-opaque1);
+    padding: 1rem;
+    border: 1px solid var(--color-mono-mediumgrey);
+    margin: auto;
+    margin-bottom: 1em;
+
+    border-radius: 1em;
+    font: 16pt var(--font-main), Arial, Helvetica;
+    color: var(--color-mono-white);
+
+}
+.story-box a{
+    color: var(--color2-bright);
+    text-decoration: none;
+}
+.story-box a:hover,
+.story-box a:active,
+.story-box a:focus{
+        color: var(--color1-bright)
+}
+.story-box ul,
+.story-box ol{
+    margin-left: 1rem;
+}
+
+
+.quote-box {
+    padding: 1rem;
+    border: 1px solid var(--color-mono-mediumgrey);
+    margin: auto;
+    margin-top: 1em;
+
+    justify-content: center;
+    font: 14pt var(--font-main), Arial, Helvetica;
+    color: var(--color-accent1);
+}

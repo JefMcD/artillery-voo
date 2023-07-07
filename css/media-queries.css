@@ -1,0 +1,85 @@
+
+
+
+
+
+@media screen and (max-width: 500px) and (min-width: 0px) {
+    /** 1 collumn pics 1 pic per category **/
+
+    .hoodies-mainpage-grid-gallery {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows:auto;
+        grid-auto-flow: dense;
+    }
+
+
+}
+
+
+
+/****************************************************************************************************
+*****************************************************************************************************
+**
+**                        Responsive Viewports
+**
+**
+******************************************************************************************************
+*****************************************************************************************************/
+
+  /* Desktops larger than 1440 */
+  @media screen and (min-width:1440px){
+
+    .art-voo-theme {
+        max-width: 768px;
+    }
+
+}
+
+
+  /* Desktops and larger Tablet devices */
+  @media screen and (max-width: 1440px) and (min-width:721px){
+
+    .art-voo-theme {
+        max-width: 768px;
+    }
+
+}
+
+
+
+
+
+  /* Collapse menu on mobile devices */
+  @media screen and (max-width: 720px) and (min-width:240px) {
+
+      .story-box {
+          font: 12pt InkFree, Arial, Helvetica;
+      }
+
+      .quote-box {
+          font: 12pt InkFree, Arial, Helvetica;
+      }
+
+      .pic-title {
+          font: 12pt;
+      }
+
+      .pic-story {
+
+          font: 12pt;
+      }
+
+      .story-box {
+          font: 10pt;
+      }
+
+      .nav-menu-wrapper{
+        display: none;
+      }
+      
+
+  }
+
+
+
+

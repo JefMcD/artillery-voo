@@ -1,0 +1,67 @@
+<form class="vooshop-form" method='POST' name='contactform' action='../server/php/contact-form-handler.php'>
+
+  <h2>Vooshop Basket</h2>
+  <!-- Top Row on the Vooshop Cart with the total and Check out Button-->
+  <div class="cart-checkout-row">
+
+      <div id='cart-checkout'>
+        <div class="cart-total">
+            <!--// Total Price //-->
+            <div class="cart-total-title">Total &pound;</div>
+            <div class="cart-total-price">0</div>
+        </div>
+          <button id = "cartCheckoutBtn" class="artvoo-button checkout-icon" type='button' href='/'>
+             <!--/// Shopping Cart Icon nect to Big Purple CHECKOUT Button ///-->
+            <img src="/images/icons/shop/checkout-good.svg">
+         </button>
+      </div>
+  </div>
+
+
+  <!-- Finish Top Row Box -->
+
+  <section class="add-item-section">
+     <div class="dropdown-header">Tote Bags</div>
+     <div class='order-details-block totes-select'>
+
+          <select name='totebag-design'  class="design">
+              <option value='Design' disabled> Choose Design</option>
+              <option value='Plandemic'> Plandemic </option>
+              <option value='Covid1984'> Covid1984 </option>
+              <option value='Pureblood' selected> Pureblood </option>
+              <option value='WorldHomicide'> World Homicide Org </option>
+              <option value='IgnoreNWO'> Ignore NWO </option>
+              <option value='VaxxineHeretic'> Vaxxine Heretic </option>
+
+          </select>
+
+
+          <div class="item-update-row">
+              <div id='add-item'>
+                  <div class="artvoo-button cart-button">
+                      <!--/// Big Yellow Purple Plus SIgn, Add Item Button ///-->
+                      <img src="/images/icons/shop/up.svg">
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+  <div class="story-box cart-message">Enter your size etc</div>
+  <!--// area to display messages //-->
+
+
+
+
+  <section class="cart-container">
+    <div class="shopping-cart-list">
+      <!-- ******Cart Inserts <div class='cart-purchase'> here ********** -->
+      <!--------- Each Time an Item is Added ------------------------------->
+    </div>
+  </section>
+
+
+
+  <input name='merch_type' value="totes" id="merchType" type="hidden">
+
+</form>

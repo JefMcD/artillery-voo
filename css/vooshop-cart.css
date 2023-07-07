@@ -1,0 +1,535 @@
+
+/**************************************************
+/*
+/*      Top Check Out Row
+/*
+/**************************************************/
+.vooshop-form{
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    box-shadow: 0 0px 10px var(--color2-bright);
+
+    border-radius: 0.5rem;
+    height: 75vh;
+    overflow:scroll;
+    background-image: url("../images/helloFrens/shells.jpg");
+}
+.cart-checkout-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+#cart-checkout {
+    display: flex;
+    width: 100%;
+    justify-content:flex-end;
+}
+
+/* wrapper for .cart-total and cart-total-title */
+.cart-total {
+    display:inline-block;
+    margin-right: 10px;
+    font-size: 16pt;
+}
+/****** cart-total-price could be implemented as a 
+        psuedo element of .cart-total-title::after
+*********/
+.cart-total-title {
+    display: inline-block;
+    color:var(--color2-bright);
+    border-bottom: var(--border-checkout);
+}
+.cart-total-price {
+    display: inline-block;
+    color:var(--color-accent2);
+    border-bottom: var(--border-checkout);
+  }
+
+.checkout-icon {
+    display: inline-block;
+    background-size: cover;
+    width: 42px;
+    height: 42px;
+    padding: 3px
+  }
+
+
+
+
+
+
+/************************************************/
+/*      Row containing Drop down lists
+/*      for Tee Shirts and Add Button
+/*
+/************************************************/
+.add-item-section{
+
+
+}
+
+
+.dropdown-header{
+    color: var(--color-mono-white);
+    font-size: 16pt;
+    content: "Tee Shirt Details";
+}
+
+.order-details-block {
+    display: grid;
+    grid-template-columns: 4fr  7fr 1fr;
+    grid-auto-flow: dense;
+    gap: 1rem;
+
+    width: 100%;
+    height:auto;
+    justify-content: bottom;
+    align-items: center;
+
+    margin-bottom: 4px;
+
+  }
+  .tops-select{
+    grid-template-columns:3fr  3fr 5fr 1fr;
+    gap: 0.1rem;
+  }
+  .totes-select{
+    grid-template-columns:9fr 1fr;
+    gap: 0.1rem;
+  }
+
+  .selected-artprint{
+    position: relative;
+    display: flex;
+
+    width:100%;
+    height: 50px;
+
+    top: 0px;
+    left: 0px;
+
+    font-size: 16pt;
+
+    text-align: left;
+    align-items: center;
+
+}
+
+#printSizeSelect{
+    position: relative;
+    display: inline-block;
+
+    width: 100%;
+    height: 50px;
+
+}
+
+.item-update-row{
+    display: inline-block;
+
+    font: 12pt InkFree, Arial, Helvetica;
+    color:var(--color-mono-white); 
+    justify-content: flex-start;
+}
+
+
+#add-item {
+    padding:0;
+}
+
+  /* missing */
+  .size{
+
+  }
+  
+  /* mising */
+  .color{
+
+  }
+
+  /*back*/
+  .back{
+
+  }
+
+  /* merchType */
+  #merchType{
+
+  }
+
+
+
+   
+.cart-button {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+
+    border: var(--color-accent4);
+    border-width: 2px;
+    border-style: solid;
+  }
+
+  .cart-button:focus,
+  .cart-button:hover {
+    border: var(--color2-bright);
+    border-width: 2px;
+    border-style: solid;
+  }
+
+.cart-message{
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding: 4px 19px;
+    border-radius: 1em;
+    font: 12pt InkFree, Arial, Helvetica;
+
+    color: var(--color2-bright);
+
+}
+.cart-error-message{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 10px;
+
+    margin-top: 10px;
+
+    border: 1px solid var(--color-accent2);
+    font-size: 14pt;
+
+    color: var(--color2-light);
+
+}
+.error{
+    border: 1px solid var(--color-accent5);
+}
+
+
+.shopping-cart-list {
+    padding: 0;
+}
+
+
+
+
+/******************************************************
+/*
+/*      Cart Items Dynamically Added
+/*
+/*
+/******************************************************/
+
+.cart-purchase {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* hidden row that may be used to hold a title*/
+.uniqueRowIdentifier{
+    display: hidden;
+    opacity: 0;
+    height: 1px;
+}
+.cart-item-title {
+    /** Unused **/
+}
+
+.cart-row {
+    display: flex;
+    width: 100%;
+    height: 150px;
+
+    justify-content:flex-end;
+
+    padding:3px;
+
+    margin-top:5px;
+
+    background-color: var(--color1-dark);
+    border: var(--border-important);
+    border-radius: 1em;
+}
+.cart-row:hover{
+    border: var(--border-important-hover);
+}
+
+.cart-item {
+    display: flex;
+
+    width: 100px;
+    margin: 10px;
+    margin-right: 20px;
+    padding: 0;
+}
+.cart-item-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+
+.cart-item-description{
+    display: block;
+    flex-grow: 1;
+
+    margin-top: 7px;
+    margin-bottom: 10px;
+
+    font-size: 12pt;
+    color: var(--color2-light);
+    padding: 5px;
+
+}
+
+
+.cart-subtotal{
+    height: 50px;
+    justify-content:flex-start;
+}
+
+
+.incdec-box {
+
+    display: flex;
+    width: 120px;
+    align-items: center;
+    justify-content:space-around;
+    gap: 2px;
+    background: transparent;
+
+}
+
+.incdec-box span {
+    font-size: 20px;
+    width: 48px;
+    pointer-events: none;
+    text-align: center;
+}
+
+.plus,
+.minus {
+    display: block;
+    width: 20px;
+    padding-top: 7px;
+    background-size: cover;
+}
+
+.num {
+    display: block;
+    border: solid 2px;
+    border-color: var(--color2-medium);
+    border-radius: 4px;
+    background-size: cover;
+}
+
+
+.subtotal-price-wastebin{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+
+}
+.subtotal-display{
+    display: flex;
+    align-items: center;
+    font-size: 16pt;
+}
+.rowSubtotal{
+    /* contains subtotal amount
+        used by calculate prices 
+        innerHTML queried*/
+}
+
+
+.wastebin-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 5px;
+    flex-grow: 0;
+
+
+}
+
+.btn-danger {
+    border: none;
+    border-radius: .3em;
+    background-size: cover;
+    width: 1.7em;
+}
+
+.btn-danger:hover {
+    background-color: var(--color-accent3);
+}
+
+
+button {
+    /*** Over-ride default Button Styling **/
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+/*****************************************************/
+/*****************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.checkout-box{
+display: flex;
+border: 1px;
+border-radius: .3em;
+justify-content: right;
+
+}
+
+
+
+
+/*************************************** Basic Form Styles ****************/
+input,
+select {
+  background: var(--color2-light);
+  font: 12pt InkFree, Arial, Helvetica;
+  color: var(--color-mono-black);
+  margin-bottom: 5px;
+  padding: 0.3em;
+  border: var(--button-border2);
+  vertical-align: middle;
+  width: calc(100% - 6px);
+  border-radius: 0.3rem;
+}
+label{
+    font: 1rem Inkfree;
+    color: var(--color2-light);
+    padding: 0.3em;
+    vertical-align: middle;
+}
+
+select {
+  text-align: center;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  outline: none;
+  border: var(--button-border2);
+  background: var( --color2-light);
+  color: #310044;
+}
+
+select option{
+  background-color: var( --color2-light);
+  font: 12pt InkFree, Arial, Helvetica;
+  color:var(--color1-dark);
+  padding: 0.3em;
+  border: var(--button-border2);
+  vertical-align: middle;
+  width: calc(100% - 6px);
+
+  border-radius: 0.3rem;
+}
+
+option:hover{
+    background-color: var(--color1-light);
+    font: 12pt InkFree, Arial, Helvetica;
+    color: var(--color2-light);
+    padding: 0.3em;
+    border: var(--button-border2);
+    vertical-align: middle;
+    width: calc(100% - 6px);
+  
+    border-radius: 0.3rem;
+  }
+
+
+
+
+
+/************************************************************************************88
+
+
+
+
+
+
+

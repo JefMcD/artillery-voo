@@ -1,0 +1,149 @@
+
+.carousel{
+    position: static;
+    display: block;
+
+    padding: 0px;
+    margin-bottom: 0.5rem;
+
+    text-align: center;
+    border: var(--border-exterior);
+    border-radius: 4px;
+
+    overflow: hidden;
+}
+.carousel-inner{
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 10px;
+    flex-wrap: nowrap;
+
+    padding: 5px;
+
+    background-color:var(--color2-semi-opaque2);
+
+}
+.carousel-item{
+    position:relative;
+    display: none;
+    width: auto;
+
+    top: auto;
+    left:auto;
+
+    padding: 5px;
+
+}
+
+.carousel-item .carPic{
+    /**/
+    display: inline-block;
+    max-width: 100%;
+    min-height: 100%
+}
+
+
+.active{
+    /* This class is toggled to change the element
+        from display:none to display: inline-block
+     */
+        display: inline-block;
+}
+
+
+
+
+.media-scroller{
+    display: grid;
+    grid-auto-flow: column ;
+    grid-auto-columns: 21%;
+
+    gap: 0.3rem;
+
+    padding: 5px;
+
+    border: var(--border-exterior);
+    border-radius: 4px;
+
+    overflow-x: auto;
+    overscroll-behavior-inline:contain;
+}
+
+
+.media-element{
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    border: var(--border-interior);
+    border-radius: 0.3rem;
+
+    background-color: var(--color2-semi-opaque2);
+}
+
+.slider-pic{
+    display:block;
+    background-color: var(--color2-semi-opaque2);
+}
+
+.slider-pic img{
+    display: block;
+    max-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.shift-carousel-left{
+    transform:translateX(-100%);
+    
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in-out;
+    transition-property: transform;
+}
+.place-carousel-left{
+    left: -100%;
+}
+
+.shift-carousel-right{
+    transform:translateX(100%);
+    
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in-out;
+    transition-property: transform;
+}
+
+/*
+The max-width CSS property sets the maximum width of an 
+element. It prevents the used value of the width property 
+from becoming larger than the value specified by max-width.
+
+So if max-width is 100%
+the the width property cannot be larger than the size of the 
+image??
+
+
+img{
+    max-width: 100%; /* sets maximum width to be egual to 100% of parent. So width of img will equal width of parent */
+                     /* max-width shorthand -  Sets width to be same as parent - useful for scaling down big images
+                     /* min-width shorthand - useful for images smaller than parent to scale them up
+
+  /*min-width: 100%;  Minumum width will be equal to maximum width of parent.
+                     /* so if a parent has width 250px 
+                     /* the the img will be no less than 250px
+                     /* and have no limit on its maximum size
+                     /* so an image that is larger than 250ps will display at full size
+                     /* and an image that is less than 250px will be scaled up to 250px 
+
+    min-height: 100%; /* sets maximum height to be equal to 100% of parent
+                      /* If the parent element has a height of 250px then
+                      /* the image cannot have a height less than 250px but no limit on how big it gets
+                      /* If the img is less than 250px it will be scaled up
+                      /* if the img is larger than 250px then its height will be 250px 
+
+    display: block; /* remove extra space below image 
+}
+
+*********************************************************/

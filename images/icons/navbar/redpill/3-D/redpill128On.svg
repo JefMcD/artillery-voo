@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg817"
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   sodipodi:docname="redpill.svg"
+   inkscape:export-filename="../../../var/www/html/images/icons/navbar/redpill/redpill64On.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs821" />
+  <sodipodi:namedview
+     id="namedview819"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="8.9935144"
+     inkscape:cx="5.5595619"
+     inkscape:cy="21.015144"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g823" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g823">
+    <path
+       style="fill:#803300;stroke-width:0.390521"
+       d="m 23.394493,2.64536 c 2.373574,-0.3562678 4.808143,0.093139 6.869214,1.2680206 L 32.10168,4.9610865 43.644642,26.105095 c 7.479167,13.700082 11.654321,21.657202 11.859275,22.601695 0.462485,2.131328 -0.165864,5.025638 -1.545183,7.117434 -1.118765,1.696653 -1.490448,1.981153 -4.966114,3.80124 -3.461391,1.812611 -3.928659,1.964374 -5.941585,1.929744 -2.467614,-0.04245 -4.782486,-0.881801 -6.481033,-2.34996 -1.687701,-1.458789 -23.666138,-42.16889 -23.950354,-44.362635 -0.285508,-2.203719 0.301443,-4.567287 1.63504,-6.5841088 1.00808,-1.5245379 1.640838,-2.043533 4.362987,-3.578594 2.101753,-1.1852091 3.725307,-1.8767221 4.776815,-2.0345491 z M 17.34892,9.336939 c -1.269465,1.903642 -1.874265,4.843211 -1.423684,6.919676 0.204898,0.944246 4.020879,8.237236 10.782889,20.607929 l 10.465766,19.14649 1.867561,1.064628 c 3.395683,1.935758 7.803848,1.798376 10.168564,-0.316904 1.734235,-1.551305 3.031506,-4.260319 3.200884,-6.684217 L 52.559054,47.954353 41.795177,28.016697 31.0313,8.0790406 29.193326,7.0313353 C 26.072852,5.2525574 21.88732,5.1785925 19.588745,6.8616037 18.955563,7.3252183 17.947644,8.4391185 17.34892,9.336939 Z"
+       id="path827" />
+    <rect
+       style="fill:#ff0000;stroke-width:1.22042"
+       id="rect935"
+       width="17.83707"
+       height="59.016422"
+       x="-23.565481"
+       y="-73.823723"
+       ry="7.4222245"
+       transform="matrix(-0.88588391,0.46390698,-0.47506494,-0.87995074,0,0)" />
+    <rect
+       style="fill:#f4d7d7;stroke-width:1.22042"
+       id="rect1043"
+       width="1.9432876"
+       height="39.096256"
+       x="-21.602905"
+       y="-60.735661"
+       ry="0.80602193"
+       rx="0.97164381"
+       transform="matrix(-0.88588391,0.46390698,-0.47506494,-0.87995074,0,0)" />
+    <rect
+       style="fill:#ff6600;stroke-width:1.22042"
+       id="rect1773"
+       width="4.8209414"
+       height="55.226841"
+       x="-11.971097"
+       y="-71.600525"
+       rx="1.8917915"
+       ry="2.1725094"
+       transform="matrix(-0.88588391,0.46390698,-0.47506494,-0.87995074,0,0)" />
+    <path
+       style="fill:#f9f9f9;stroke-width:1.22039"
+       id="path1975"
+       sodipodi:type="arc"
+       sodipodi:cx="-30.538631"
+       sodipodi:cy="-63.168411"
+       sodipodi:rx="1.4625976"
+       sodipodi:ry="2.9142318"
+       sodipodi:start="0.15211305"
+       sodipodi:end="0.083606993"
+       sodipodi:arc-type="arc"
+       d="m -29.092922,-62.726826 a 1.4625976,2.9142318 0 0 1 -1.642541,2.446136 1.4625976,2.9142318 0 0 1 -1.255619,-3.230398 1.4625976,2.9142318 0 0 1 1.599534,-2.556782 1.4625976,2.9142318 0 0 1 1.310405,3.142825"
+       sodipodi:open="true"
+       transform="matrix(-0.94169206,0.33647595,-0.32923685,-0.94424737,0,0)" />
+  </g>
+</svg>

@@ -1,0 +1,281 @@
+
+       
+
+        <div class="cart-panel positionCenterFixed">
+
+
+
+
+
+
+
+
+
+
+
+            <!--/////////////// artprints-info Section /////////////////////-->
+            <!--/////////////// artprints-info Section /////////////////////-->
+            <div class="soft-panel merch-soft-panel">
+                    <div class="close-button">
+                        <img src="/images/icons/shop/cross.svg" alt="close button">
+                    </div>
+
+                    <section class="vooshop-form">
+
+                                <h3 class="form-title">Print Details</h3>
+                                <div class="form-paragraph">
+                                    Artillery Voo prints are made to the highest standard directly from the Original artwork, taking great care to ensure that they are true to the original as possible. The Delivered artwork is of a much greater resolution than can be shown on the website and do not contain any copyright symbols or tags. 
+                                  </div>
+                                  <h4>Print Sizes</h4>
+                                <div class="form-paragraph"> The prices listed here are for A3 digital prints on 300gsm Silk Velvet Card and A2 Giclee prints on 300gsm watercolor card. If you would like to order a bigger size than that, message me here or through social media and ask me</div>
+                            
+                            
+                                <h4>Originals</h4>
+                                <div class="form-paragraph">
+                                    If you see a print listed for sale and you want to buy the original, message me and I'll give you the price, and we can arrange payment and shipping.
+                                </div>  
+                                
+                                <h4>Comissions</h4>
+                                <div class="form-paragraph">I regularly do private commissions, so If you would like to commission me for anything; whatever it is, get in touch and we can discuss it and get the ball rolling.</div>
+                                
+                    </section>
+
+            </div>
+            <!--///////////////  artprints-info Section /////////////////////-->
+            <!--/////////////// artprints-info Section /////////////////////-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--///////////////  Scamdemic Cart Panel Section /////////////////////-->
+            <!--///////////////  Scamdemic Cart Panel Section /////////////////////-->
+            <div class="soft-panel shoppingCart-soft-panel">
+                    <div class="close-button">
+                        <img src="/images/icons/shop/cross.svg" alt="close button">
+                    </div>
+
+
+                    <form class="vooshop-form" method='POST' name='contactform' action='../server/php/contact-form-handler.php'>
+
+                        <h2>Vooshop Basket</h2>
+                        <!-- Top Row on the Vooshop Cart with the total and Check out Button-->
+                        <div class="cart-checkout-row">
+                      
+                            <div id='cart-checkout'>
+                              <div class="cart-total">
+                                  <!--// Total Price //-->
+                                  <div class="cart-total-title">Total &pound;</div>
+                                  <div class="cart-total-price">0</div>
+                              </div>
+                                <button id = "cartCheckoutBtn" class="artvoo-button checkout-icon" type='button' href='/'>
+                                   <!--/// Shopping Cart Icon nect to Big Purple CHECKOUT Button ///-->
+                                  <img src="/images/icons/shop/checkout-good.svg">
+                               </button>
+                            </div>
+                        </div>
+                      
+                        <!-- Finish Top Row Box -->
+                      
+                        <section class="add-item-section">
+                                <div class="dropdown-header">
+                                    <!--- content supplied by Javascript on opening the cart-->
+                                    Scamdemic Prints
+                                </div>
+                           <div class='order-details-block'>
+
+                                <label for="printSizeSelect" class="selected-artprint">
+                                    Print Size
+                                </label>
+
+                               <select name='printSizeSelect' class="printSize">
+                                    <option value='size' disabled>Sizes</option>
+                                    <option value='Standard'> A3 42cm x 29cm </option>
+                                    <option value='Large' selected> A2 60cm x 42cm </option>
+                               </select>
+                      
+                                <div class="item-update-row">
+                                    <div id='add-item'>
+                                        <div class="artvoo-button cart-button">
+                                            <!--/// Big Yellow Purple Plus SIgn, Add Item Button ///-->
+                                            <img src="/images/icons/shop/up.svg">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                          </section>
+                      
+                        <div class="story-box cart-message">Choose your print size</div>
+                        <!--// area to display messages //-->
+
+                        <section class="cart-container">
+                          <div class="shopping-cart-list">
+                            <!-- ******Cart Inserts <div class='cart-purchase'> here ********** -->
+                            <!--------- Each Time an Item is Added ------------------------------->
+                          </div>
+                        </section>
+                      
+                        <input name='merch_type' value="artprints" id="merchType" type="hidden">
+                      
+                      </form>
+
+            </div>
+            <!--///////////////  Scamdemic Cart Panel Section /////////////////////-->
+            <!--///////////////  Scamdemic Cart Panel Section /////////////////////-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--/////////////// Customer Details Cart Section /////////////////////-->
+                <!--/////////////// Customer Details Cart Section /////////////////////-->
+
+            <div class="soft-panel customerDetails-soft-panel">
+                    <div class="close-button">
+                            <img src="/images/icons/shop/cross.svg" alt="close button">
+                    </div>
+
+                    <form class="vooshop-form" method='POST' name='contactform' onsubmit="event.defaultPrevented; return go_checkout();" action='../server/php/checkout_handler.php'>
+
+                                <h2>Vooshop Basket</h2>
+                                <!-- Top Row on the Vooshop Cart with the total and Check out Button-->
+                                <div class="cart-checkout-row">
+                              
+                                    <div id='cart-checkout'>
+                                      <div class="cart-total">
+                                          <!--// Total Price //-->
+                                          <div class="cart-total-title">Confirm Order</div>
+                                      </div>
+                                        <button id = "customerDetails_checkoutBtn" class="artvoo-button checkout-icon" type='submit' href='/'>
+                                           <!--/// Shopping Cart Icon nect to Big Purple CHECKOUT Button ///-->
+                                          <img src="/images/icons/shop/checkout-good.svg">
+                                       </button>
+                                    </div>
+                                </div>
+                              
+                              
+                                <!-- Finish Top Row Box -->
+                              
+                                <section class="add-item-section">
+                                      <div class="dropdown-header">Personal Details</div>
+                              
+                                      <section class="customer-details">
+                              
+                                          <div class="personal-details-grid">
+                                              <label for="firstname"></label>
+                                              <input class="required" data-descriptor="firstname" name="firstname" placeholder="firstname" type="text">
+                              
+                                              <label for="surname"></label>
+                                              <input class="required"  data-descriptor="surname"  name="surname"  placeholder="surname" type="text">
+                              
+                                              <label for="email"></label>
+                                              <input class="required" data-descriptor="email"  name="email" placeholder="email" type="email">
+                                          </div>
+                              
+                                          <div class="dropdown-header">Shipping Details</div>
+                                          <div class="shipping-address-grid">
+                                              
+                                              <label id="houseNum" for="house_number">House Num <span class="required-info">*</span></label>
+                                              <input  class="required" data-descriptor="houseNumber"  name="house_number" type="text">
+                              
+                                              <label for="street">Street <span class="required-info">*</span></label>
+                                              <input class="required" data-descriptor="street"   name="street" type="text">
+                              
+                                              <label for="area">Area</label>
+                                              <input name="area" type="text">
+                              
+                                              <label for="city">City <span class="required-info">*</span></label>
+                                              <input class="required" data-descriptor="city"  name="city" type="text">
+                              
+                                              <label for="country">Country <span class="required-info">*</span></label>
+                                              <input class="required"  data-descriptor="country"  name="country" type="text">
+                              
+                                              <label for="postcode">Post Code <span class="required-info">*</span></label>
+                                              <input class="required"  data-descriptor="postcode"  name="postcode" type="text">
+                                          </div>
+                              
+                                      </section>
+                              
+                                      <div class="story-box cart-error-message">Your Order Has been Saved!</div>
+                                      <!--// area to display messages //-->
+                              
+                              
+                                </section>
+                              
+                    </form>
+            </div>
+
+                <!--/////////////// Customer Details Cart Section /////////////////////-->
+                <!--/////////////// Customer Details Cart Section /////////////////////-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--/////////////// End Sticky Bottom Buttons Section /////////////////////-->
+            <!--/////////////// End Sticky Bottom Buttons Section /////////////////////-->
+            <div class="cart-panel-flexbox">
+              
+                <div class="cart-panel-btns">
+                        <div class="artvoo-button open-merch-info vooshopCartBar" id="merch-info-btn">
+                            <div class="icon-wrapper open-merch-info vooshopCartBar">
+                                <img class="open-merch-info vooshopCartBar" src="/images/icons/shop/label-full.svg">
+                                <!-- PRICETAG Button -->
+                            </div>
+                        </div>
+                        <div class="artvoo-button open-vooshop-cart vooshopCartBar" id="openCartBtn">
+                            <div class="icon-wrapper open-vooshop-cart vooshopCartBar">
+                                <img class="open-vooshop-cart vooshopCartBar" src="/images/icons/shop/checkout-add.svg">
+                                    <!-- CART Button -->
+                            </div>
+                        </div>
+                </div>
+
+                <div class="flexbox-item pagetitle-item">
+                    <div class="inner-text">
+                        <h2>Shopping Cart</h2>
+                    </div><!-- CART Buttons TITLE -->
+                </div>
+          </div>
+      </div>
+      <!--/////////////// End Sticky Bottom Buttons Section /////////////////////-->
+      <!--/////////////// End Sticky Bottom Buttons Section /////////////////////-->
+

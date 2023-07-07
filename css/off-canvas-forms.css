@@ -1,0 +1,289 @@
+
+
+
+/* Difference between Class and Id
+The Id is Primary and unique
+The Class is Secondary and not unique
+Therefor Since The Id is primary,
+any styling made within an Id 
+cannot be changed using a Class. 
+The Id styling is fixed and takes priority.
+*/
+#overlay{
+    margin:0;
+}
+.overlay-active{
+    position:absolute;
+    display:block;
+    width: 100%;
+    height: 200vh;
+    top: 0;
+    left: 0;
+
+
+    background-color: var(--color-mono-overlay);
+    z-index:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.customer-details{
+    position:static;
+    display:block;
+    
+    padding: 5px;
+
+}
+
+.personal-details-grid{
+    position: relative;
+    display: flex;
+    
+    width: 100%;
+    flex-wrap:wrap;
+
+    padding: 5px;
+
+
+}
+.shipping-address-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+
+
+    padding: 5px;
+
+}
+.required-info{
+    color:var(--color-accent1);
+    font-size: 1em;
+}
+.required{
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.soft-panel{
+    position: absolute;
+    display:block;
+    width: 420px;
+    height:80vh;
+    left: 0px;
+    bottom: 80px;
+
+    opacity: 0;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 80px;
+
+    background: var(--color1-medium);
+    border: var(--border-exterior);
+    border-radius: var(--border-radius-md);
+
+    transform: translateX(-100%);
+    transition-property: opacity transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+/*  Unique properties for merch info slide panel */
+.merch-soft-panel{
+    z-index: 2;
+    overflow: scroll;
+}
+.open-merch-info{
+   /* class used to select bubble event listener on vooshop barf */
+}
+
+.open-vooshop-cart{
+    /* class used to select bubble event listener on vooshop bar */
+ }
+
+/*  Unique properties for vooshop cart slide panel */
+.shoppingCart-soft-panel{
+    z-index: 3;
+    overflow: hidden;
+}
+
+/* Unique properties of Customer details panel */
+.customerDetails-soft-panel{
+    z-index: 1;
+    overflow: scroll;
+}
+
+.soft-load{
+    opacity:1;
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.close-button{
+    position:absolute;
+    display:inline-block;
+    
+    width: 16px;
+    height: 16px;
+
+    top: 10px;
+    right: 20px;
+
+
+    cursor: pointer;
+
+}
+.close-button>img{
+    max-width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cart-panel {
+    display: block;
+
+    left: 0px;
+    bottom: 0px;
+
+    border: var(--border-important);
+    border-radius: var(--border-radius-md);
+    padding: 0.5rem;
+
+    background-color: var(--color1-dark);
+
+}
+
+
+.cart-panel-flexbox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+.cart-panel-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-left: 1rem;
+    justify-content: start;
+}
+
+.artvoo-button {
+    position: relative;
+    display: flex;
+
+    width: 4rem;
+    height: 3rem;
+
+    top: 0px;
+    left: 0px;
+
+    /* top right */
+    padding: 2px;
+    cursor: pointer;
+
+    border: var(--button-border1);
+    border-radius: var(--border-radius-md);
+
+    background-color: var(--color1-medium);
+
+    justify-content: center;
+}
+.artvoo-button:hover,
+.artvoo-button:focus {
+    border: var(--button-border2);
+}
+.icon-wrapper{
+    position: relative;
+    display:block;
+    width:70%;
+
+}
+.icon-wrapper img{
+    width:100%;
+    aspect-ratio: 1/1;
+    object-fit:contain;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.lock-mainwindow-scrollbars{
+    overflow: hidden;
+}
+.cart-container{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************/
+/* general-order-info.html */
+.form-paragraph{
+    display:block;
+    font: var(InkFree);
+    color: var(--color2-light);
+}
+.form-title{
+    margin-bottom: 10px;
+}
+/*****************************/
+/******************************/
+
+
+
+
+
+
+

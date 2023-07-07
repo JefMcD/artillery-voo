@@ -1,0 +1,104 @@
+
+<style>
+
+  form {
+      width: 420px;
+      padding: 2em;
+      box-shadow: 0 0px 10px rgb(223, 183, 131);
+        background: transparent url(../images/helloFrens/shells.jpg) repeat left top;
+    }
+    
+    input,
+    select,
+    textarea  {
+      background-color: var(--color2-light);
+      font: 16pt InkFree, Arial, Helvetica;
+      color: var(--color2-medium);
+    
+      padding: 0.3em;
+      border: 0.1em solid var(--color-mono-lightgrey);
+      border-radius: 0.2rem;
+    
+      vertical-align: middle;
+    
+      width: 100%;
+      border-radius: 0.3rem;
+    }
+    
+    select {
+      text-align: center;
+    }
+    
+    input:hover,
+    textarea:hover,
+    select:hover {
+      border: 0.1em solid var(--color1-light);
+    }
+    
+    
+    .enquiry-button{
+      background-image: url("/images/icons/shop/send-blu.svg");
+      width: 36px;
+      height: 36px;
+    }
+    .btn-block {
+      position: relative;
+      display: flex;
+      justify-content:center;
+      margin-top: 20px;
+      text-align: center;
+      width:100%;
+    }
+    .btn-block>button{
+      background: transparent;
+      border: 0px;
+      cursor: pointer;
+    }
+    .enquiry-error-box{
+      position: relative;
+      display: block;
+     
+      width: calc(100% - 6px);
+
+      margin-top: 1rem;
+      padding: 10px;
+      min-height: 2rem;
+      border: 1px solid var(--color2-medium);
+      border-radius: 0.3rem;
+      color: var(--color2-bright)
+    }
+    .error-on{
+      border: 1px solid var(--color1-bright);
+    }
+  </style>
+  
+<form class="vooshop-form" id="general_enquiry_form" method='POST' name='enquiryform' onsubmit="event.defaultPrevented; return validate_enquiry_form();" action='../server/php/enquiry-form-handler.php?v0.4'>
+
+  <h3>Enquiry</h3>
+
+  <h4>Firstname<span>*</span></h4>
+  <input id = "firstname" name='firstname' type='text' />
+
+  <h4>Lastname<span>*</span></h4>
+  <input id = "lastname" name = "last" type = "text" />
+
+  <h4>Email Address<span>*</span></h4>
+  <input id="email" name='email' type='email' />
+
+  <h4>Well ...??? Out with it!</h4>
+  <textarea id="message" rows='5' name='message'></textarea>
+  
+  <div class="enquiry-error-box">
+    This is where the error message goes
+  </div>
+
+  <input name='merch_type' value="enquiry" type="hidden">
+
+
+
+  <div class='btn-block'>
+    <button class="artvoo-button enquiry-button" type='submit' href='/' aria-controls="send enquiry">
+      <div class="icon"><img src="/images/icons/shop/send-blu.svg"></div>
+    </button>
+  </div>
+</form>

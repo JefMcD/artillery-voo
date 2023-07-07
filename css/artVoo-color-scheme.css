@@ -1,0 +1,171 @@
+
+
+/*************************************************************
+//
+//  CSS Variable definitions for theme
+//
+//
+//
+//
+//      Color Mono:
+//                  color-mono-black
+//                  color-mono-light-grey
+//                  color-mono-med-grey
+//                  color-mono-dark-grey
+//                  color-mono-black
+//
+//
+//      Color 1: Purple
+//                  color1-dark
+//                  color1-med
+//                  color1-light
+//                  color1-bright
+//
+//      Color 2: Yellow
+//                  color2-dark
+//                  color2-med
+//                  color2-light
+//                  color2-bright
+//
+//
+//      Color 3: Accents
+//                  color-accent1
+//                  color-accent2
+//                  color-accent3
+//
+//      Navbar
+//                  color-nav-menu
+//                  color-nav-menu-border
+//                  color-nav-link
+//                  color-nav-link-hover
+//                  color-nav-link-bg
+//
+//
+//      Border
+//                border-interior
+//                border-exterior
+//
+//      fonts
+//                  font1
+//                  font2
+//                  font3
+//
+/************************************************************/
+
+:root{
+    /* Repeating Background Tile */
+    --background-tile1: url("../images/helloFrens/shells.jpg");
+    --background-tile2: url("../images/helloFrens/shells.jpg");
+
+
+    /* Color Mono */
+    --color-mono-white: #fff;
+    --color-mono-lightgrey: #c0c6cf;
+    --color-mono-mediumgrey: #3e4044;
+    --color-mono-darkgrey:  #212224;
+    --color-mono-black:  #000000;
+    --color-mono-overlay:  rgba(0, 0, 0, 0.5);
+
+    /* color purple */
+    --color1-nav:  #18001f;
+    --color1-dark: #1d151d;
+    --color1-medium:  #500550;
+    --color1-light:  #670b9c;
+    --color1-bright: #ca00ca;
+    --color1-semi-opaque1: rgba(29, 21, 29.0.5);
+    --color1-semi-opaque2: rgba(80, 5, 80,0.5);
+
+    /* color yellow */
+    --color2-dark: #271c06;
+    --color2-light: #d8cf9b;
+    --color2-medium: #88771a;
+    --color2-bright: #cfb000;
+    --color2-semi-opaque1:  rgba(129, 110, 0, 0.1);
+    --color2-semi-opaque2:  rgba(129, 110, 0, 0.4);
+    --color2-semi-opaque3:  rgba(129, 110, 0, 0.7);
+
+    /* color accents */
+    --color-accent1: #f8b421d5;
+    --color-accent2: rgb(0, 197, 0);
+    --color-accent3:  #8f0202;
+    --color-accent4: #33757e;
+    --color-accent5:  #ff0000;
+
+    /* navbar */
+    --color-nav-menu-bg: #f7ecd9;
+    --color-nav-menu-border: #740083;
+    --color-nav-link:  #500550;
+    --color-nav-link-visited: #9c0000;
+    --color-nav-link-hover: #e1fbff;
+    --color-nav-link-hover-bg: #500550;
+
+    /* fonts */
+    --font-main: InkFree;
+    --font-headings1: Harting;
+    --font-headings2: Militarist;
+    --font-nav: Goodgirl;
+    --font-pageTitle: Goodgirl;
+
+
+    /* border: width style color */
+    --border-interior: 1px solid var(--color2-light);
+    --border-exterior: 2px solid var(--color2-light);
+    --border-important: 3px double var(--color-accent4);
+    --border-important-hover: 3px double var(--color-accent1);
+    --border-checkout: 5px double var(--color-accent2);
+
+    --button-border1: 1px solid var(--color-accent4);
+    --button-border2: 2px solid var(--color2-bright);
+
+    /* Border Radius */
+    --border-radius-sm: 0.3rem;
+    --border-radius-md: 0.6rem;
+    --border-radius-lg: 1rem;
+
+
+
+    /*** Firefox Scrollbars ***/
+    scrollbar-color: var(--color2-light)var(--color1-dark) !important;   
+    scrollbar-width: auto !important; 
+    
+}
+
+
+
+
+/***************************************************
+//          Scrollbars Chrome Opera Safari
+//**************************************************/
+::-webkit-scrollbar{
+    width: 1em; /* width of Vertical Scroller */
+    height: 1em; /* height of horizontal scrollers */
+}
+
+::-webkit-scrollbar-track{
+    background: var(--color1-dark);
+    margin-block:0.5em;
+}
+/*
+::-webkit-scrollbar-thumb{
+    background: var(--color1-medium);
+    border: solid 4px var(--color1-bright);
+    border-radius: 100vw;
+
+}
+
+/* thumb with a linear gradient */
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(78, 0, 78), rgb(255, 217, 0));
+    border: solid 4px var(--color1-bright);
+    border-radius: 100vw;
+
+}
+
+/********** Alternative Way To get Firefox Scrollbars Working *******
+@supports(scrollbar-color: black white){
+    *{
+        scrollbar-color: var(--color1-light)var(--color1-dark) !important;   
+        scrollbar-width: auto !important; 
+    }
+}
+***/

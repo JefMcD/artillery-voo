@@ -1,0 +1,81 @@
+
+
+
+
+<form class="vooshop-form" method='POST' name='contactform' onsubmit="event.defaultPrevented; return go_checkout();" action='../server/php/checkout_handler.php?v0.1'>
+
+  <h2>Vooshop Basket</h2>
+  <!-- Top Row on the Vooshop Cart with the total and Check out Button-->
+  <div class="cart-checkout-row">
+
+      <div id='cart-checkout'>
+        <div class="cart-total">
+            <!--// Total Price //-->
+            <div class="cart-total-title">Confirm Order</div>
+        </div>
+          <button id = "customerDetails_checkoutBtn" class="artvoo-button checkout-icon" type='submit' href='/'>
+             <!--/// Shopping Cart Icon nect to Big Purple CHECKOUT Button ///-->
+            <img src="/images/icons/shop/checkout-good.svg">
+         </button>
+      </div>
+  </div>
+
+
+  <!-- Finish Top Row Box -->
+
+  <section class="add-item-section">
+        <div class="dropdown-header">Personal Details</div>
+
+        <section class="customer-details">
+
+            <div class="personal-details-grid">
+                <label for="firstname"></label>
+                <input class="required" data-descriptor="firstname" name="firstname" placeholder="firstname" type="text">
+
+                <label for="lastname"></label>
+                <input class="required"  data-descriptor="lastname"  name="lastname"  placeholder="lastname" type="text">
+
+                <label for="email"></label>
+                <input class="required" data-descriptor="email"  name="email" placeholder="email" type="email">
+            </div>
+
+            <div class="dropdown-header">Shipping Details</div>
+            <div class="shipping-address-grid">
+                
+                <label id="houseNum" for="house_number">House Num <span class="required-info">*</span></label>
+                <input  class="required" data-descriptor="houseNumber"  name="house_number" type="text">
+
+                <label for="street">Street <span class="required-info">*</span></label>
+                <input class="required" data-descriptor="street"   name="street" type="text">
+
+                <label for="area">Area</label>
+                <input name="area" type="text">
+
+                <label for="city">City <span class="required-info">*</span></label>
+                <input class="required" data-descriptor="city"  name="city" type="text">
+
+                <label for="country">Country <span class="required-info">*</span></label>
+                <input class="required"  data-descriptor="country"  name="country" type="text">
+
+                <label for="postcode">Post Code <span class="required-info">*</span></label>
+                <input class="required"  data-descriptor="postcode"  name="postcode" type="text">
+            </div>
+
+        </section>
+
+        <div class="story-box cart-error-message">Your Order Has been Saved!</div>
+        <!--// area to display messages //-->
+
+        <div class="story-box">
+            <input id="order-block" name="order_block" type="hidden">
+            <!-- will be populated by javascript and 
+                carry the local storage order information to server-->
+        </div>
+            
+           
+
+
+  </section>
+
+
+</form>

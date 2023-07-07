@@ -1,0 +1,43 @@
+/*************************************************************
+//
+//  Fonts
+//
+//
+/************************************************************/
+
+@font-face {
+    /*Typewriter*/
+    font-family: Harting;
+    src: url(../fonts/Harting.ttf);
+}
+
+@font-face {
+    /*Plain*/
+    font-family: Helvetica;
+    src: url(../fonts/Helvetica.ttf);
+}
+
+@font-face {
+    /*Block Militaristic*/
+    font-family: Militarist;
+    src: url(../fonts/Depressionist_3.ttf);
+}
+
+@font-face {
+    /*Handwriting*/
+    font-family: InkFree;
+    src: url(../fonts/Inkfree.ttf);
+}
+
+@font-face {
+    /*Boing*/
+    font-family: CutiePatootieHollow;
+    src: url(../fonts/Cutie_Patootie_Hollow.ttf);
+}
+
+@font-face {
+    /*Boing*/
+    font-family: Goodgirl;
+    src: url(../fonts/GOODGIRL.TTF);
+}
+

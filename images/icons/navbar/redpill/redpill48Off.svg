@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg5671"
+   inkscape:export-filename="redpill-On.svg"
+   inkscape:export-xdpi="6.0959997"
+   inkscape:export-ydpi="6.0959997"
+   sodipodi:docname="redpill48Off.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview5673"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.1218333"
+     inkscape:cx="321.79468"
+     inkscape:cy="377.95276"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs5668" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4908"
+       transform="matrix(0.89318058,0.50755092,-0.51802437,0.87056033,75.436891,-69.098279)"
+       style="fill:#ff2a2a;stroke:#803300">
+      <rect
+         style="fill:#ff2a2a;stroke:#803300;stroke-width:8.465;stroke-dasharray:none"
+         id="rect4116"
+         width="56.845566"
+         height="193.28714"
+         x="76.803955"
+         y="36.953335"
+         rx="25.325298"
+         ry="32.586235" />
+      <rect
+         style="fill:#ff2a2a;stroke:#803300;stroke-width:8.465;stroke-dasharray:none"
+         id="rect4901"
+         width="32.137814"
+         height="1.842276"
+         x="88.039856"
+         y="131.65944"
+         rx="25.325298"
+         ry="1.842276" />
+    </g>
+  </g>
+</svg>

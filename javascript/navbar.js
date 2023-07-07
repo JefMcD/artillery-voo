@@ -1,0 +1,265 @@
+    // Adding EventListener and function to dynamically created elemts
+    // this done using Delegated Events
+    // https://stackoverflow.com/questions/203198/event-binding-on-dynamically-created-elements/27373951#27373951
+    // dynamically created elements wont be available at page load
+    // so the eventListener is added to a parent element and
+    // the when the page is loaded you can search for the clicked target
+    // if the desired element has been clicked
+
+
+
+/*********************************************************************************
+ * 
+ * 
+ *      add event listener to document 
+ *      examine the click event and take corrosponding action
+ * 
+ * 
+ *      Click is on Main Navbar
+ *          event.target is
+ *              navbar-icon
+ * 
+ *      Click is on Main Navbar
+ *          event.target is
+ *              hamburger
+ *              
+ * 
+ *      Click is on Mobile Menu
+ *              mobile-menu-icon
+ *             
+ * 
+ *      Click Is on Vooshop Cart Bar
+ *          event.target is vooshop bottombar
+ *          event.target.classList.contains("vooshop-cart-bar")
+ * 
+ * 
+ *      Click is on Empty Space
+ *          default - everything else
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+function mainNavbarDropdowns(e){
+ 
+    console.log("************Navbar Clicked********************")
+    let clickedElement = e.target;
+    let activeDrop = document.querySelector('.dropmenu-on');
+    console.log("target = ",clickedElement);
+    if(activeDrop == null){
+        // All dropdowns are off
+        // if clicked elemnt is a nav icon toggle dropdown-on
+        if(clickedElement.classList.contains('navbar-icon')){
+            console.log("************ Nav Icon ********************")
+            dropmenu = clickedElement.querySelector(".dropmenu")
+            console.log("clickedElement => ",clickedElement)
+            console.log("dropmenu IN => ",dropmenu)
+
+            dropmenu.classList.toggle("dropmenu-on")
+            activeDrop = document.querySelector('.dropmenu-on');
+
+            console.log("dropmenu OUT => ",dropmenu)
+        }else{
+            // click outside navbar so nothing to do
+            return
+        }
+    }else{
+        // A dropdown is on
+        if(clickedElement.classList.contains('navbar-icon')){
+            //navbar-icon clicked - clickedElement
+            //Either its a click on THE active drop or an inactive drop
+            if(activeDrop == clickedElement.firstElementChild){
+                activeDrop.classList.toggle('dropmenu-on')
+            }else{
+                activeDrop.classList.toggle('dropmenu-on')
+                clickedElement.firstElementChild.classList.toggle("dropmenu-on")
+            }
+        }else{
+            // click outside navbar with a dropdown-on
+            // toggle it off
+            activeDrop.classList.toggle('dropmenu-on')
+        }
+    }     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hamburger Animation */
+function toggleMobileMenu(e) {
+    console.log("********* Process Navbar Click -  Check Hamburger **********")
+    function toggleHamBtn(togBtn) {
+        togBtn.classList.toggle('open');
+     }
+
+    const target = e.target;
+    console.log('target = ', target)
+    if(target.classList.contains('hamburger' ) ||
+       target.classList.contains('hamburger-top' ) ||
+       target.classList.contains('hamburger-middle') ||
+       target.classList.contains('hamburger-bottom')){
+
+        const togBtn = document.getElementById('menuBtn');
+        toggleHamBtn(togBtn);
+        console.log("hamburger clicked")
+        let mobileMenu =  document.querySelector(".mobile-menu-panel");
+        mobileMenu.classList.toggle("mobile-menu-on")
+        console.log("mobile panel => ", mobileMenu)
+     }else{
+        console.log("other nav Area clicked")
+     }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const mobileDropdownMenus = (e) => {
+    console.log("mobile menu dropdown process")
+    console.log("************ Mobile Menu Icon Clicked********************")
+    let clickedElement = e.target;
+    let activeDrop = document.querySelector('.dropmenu-on');
+    console.log("target = ",clickedElement);
+    if(activeDrop == null){
+        // All dropdowns are off
+        // if clicked elemnt is a nav icon toggle dropdown-on
+        if(clickedElement.classList.contains('mobile-menu-icon')){
+            console.log("************ Nav Icon ********************")
+
+            let mobileDropmenu = clickedElement.querySelector(".mobile-dropmenu")
+            mobileDropmenu.classList.toggle("dropmenu-on")
+            activeDrop = document.querySelector('.dropmenu-on');
+
+   
+        }else{
+            // click outside navbar so nothing to do
+            return
+        }
+    }else{
+        // A dropdown is on
+        let mobileDropmenu = clickedElement.querySelector(".mobile-dropmenu")
+        if(clickedElement.classList.contains('mobile-menu-icon')){
+            //navbar-icon clicked - clickedElement
+            //Either its a click on THE active drop or an inactive drop
+            if(activeDrop == mobileDropmenu){
+                activeDrop.classList.toggle('dropmenu-on')
+            }else{
+                activeDrop.classList.toggle('dropmenu-on')
+                mobileDropmenu.classList.toggle("dropmenu-on")
+            }
+        }else{
+            // click outside navbar with a dropdown-on
+            // toggle it off
+            activeDrop.classList.toggle('dropmenu-on')
+        }
+    }  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Add event Listner to Vooshop Panel
+// Functions Called are in vooshop.js
+function openVooshop(e){
+    // click event on the vooshop bar
+    // find what had been clicked
+
+    clickEvent = e.target
+    console.log("element clicked => ", clickEvent)
+
+    // So the Vooshop cart and panels have many clickabes that carry out functions
+    // What I need to so is to capture the click and then call the corrosponding function
+    //
+    // merch-info-button opens the merch, totes, scamdemic, nwo info panels
+    // 
+    // 
+    if(clickEvent.classList.contains("open-merch-info")){
+        //open merch Info panel button clicked//
+        openMerchInfoPanel()
+    }
+
+    if(clickEvent.classList.contains("open-vooshop-cart")){
+        //open merch Info panel button clicked//
+        open_cart()
+    }
+
+
+}
+
+
+
+
+
+const processPageClick = (e) => {
+    console.log("************** Processing Page Click *******************")
+    console.log("target => ", e.target)
+
+    let clickedElement = e.target
+
+    if(clickedElement.classList.contains("navbar-icon") == true){
+        console.log("nav-icon")
+        mainNavbarDropdowns(e)
+    }else if(clickedElement.classList.contains("ham-toggle") == true){
+        console.log("hamburger")
+        toggleMobileMenu(e)
+    }else if(clickedElement.classList.contains("mobile-menu-icon") == true){
+        console.log("mobile-menu-icon")
+        mobileDropdownMenus(e)
+    }else if(clickedElement.classList.contains("vooshopCartBar") == true){
+        console.log("vooshopCartBar")
+        openVooshop(e)
+    }else{
+        console.log("empty-space")
+        mainNavbarDropdowns(e)
+    }
+    
+}
+
+document.addEventListener("click", processPageClick);
+
+
+
+
+
+
+
