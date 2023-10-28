@@ -11,7 +11,7 @@ $headers = [
   'Content-Type' => 'text/html; charset=iso-8859-1'
 ];
 
-mail('recipient@host.com', 'My subject', 'My message', $headers);
+//mail('recipient@host.com', 'My subject', 'My message', $headers);
 
 $errors = '';
 $myemail = 'artilleryvoo@protonmail.com';//<-----Put Your email address here.
